@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>TopTaskAI &mdash; Your AI Chief of Staff</title>
+    <meta name="description" content="TopTaskAI is your AI chief of staff for getting things done. Stop procrastinating, finally.">
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #6b7280;
+            --link: #2563eb;
+            --link-hover: #1d4ed8;
+            --border: #e5e7eb;
+            --bg: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #e5e7eb;
+                --muted: #9ca3af;
+                --link: #60a5fa;
+                --link-hover: #93c5fd;
+                --border: #374151;
+                --bg: #111827;
+            }
+        }
+
+        * { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            text-align: center;
+            max-width: 520px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin: 0 0 16px;
+            line-height: 1.05;
+        }
+
+        .tagline {
+            font-size: 20px;
+            color: var(--muted);
+            margin: 0 0 48px;
+            line-height: 1.5;
+        }
+
+        .links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            font-size: 15px;
+        }
+
+        .links a {
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        .links a:hover {
+            color: var(--link);
+            border-bottom-color: var(--link);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 40px; }
+            .tagline { font-size: 17px; margin-bottom: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>TopTaskAI</h1>
+        <p class="tagline">Your AI chief of staff for getting things done.</p>
+        <div class="links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+        </div>
+    </main>
+</body>
+</html>
