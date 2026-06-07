@@ -1,6 +1,6 @@
 # Privacy Policy for TopTaskAI
 
-**Last updated:** May 28, 2026
+**Last updated:** June 7, 2026
 
 ## 1. Introduction
 
@@ -9,7 +9,7 @@ This Privacy Policy describes how Vidya Sagar Dadi ("we", "us", or "TopTaskAI") 
 By using the Service, you agree to the collection and use of information in accordance with this policy. If you do not agree with this Policy, please do not use the Service.
 
 **Operator:** Vidya Sagar Dadi (individual)
-**Postal address:** G2, A S Paradise, Lane 3, Narasimhanagar, Visakhapatnam 530024, Andhra Pradesh, India
+**Postal address:** The Estate Building, 08th Floor, Dickenson Road, Bangalore, India – 560042
 **Contact:** privacy@toptaskai.com
 
 ## 2. Information We Collect
@@ -72,13 +72,14 @@ We share information with the following service providers strictly to operate th
 |----------|---------|-----------------------|
 | Anthropic, PBC | AI processing (Claude API) | United States |
 | Supabase | Database and authentication | Seoul, South Korea |
-| Railway | Backend hosting | Singapore |
+| Railway | Backend hosting | United States |
 | Resend | Transactional and marketing email delivery | United States |
 | Apple Inc. | App distribution, Sign in with Apple, Hide My Email relay, in-app purchases | Global |
 | Google LLC | Sign in with Google, Play Store distribution | Global |
 | Expo / EAS | Mobile app builds and over-the-air updates | United States |
 | RevenueCat, Inc. | Subscription management and entitlement verification | United States |
-| GoDaddy.com, LLC | Domain registration and email forwarding for our `toptaskai.com` domain | United States |
+| GoDaddy.com, LLC | Domain registration for our `toptaskai.com` domain | United States |
+| ImprovMX | Email forwarding for our `toptaskai.com` domain | European Union / United States |
 
 Each of these providers is bound by their own privacy policies and contractual obligations to process data only on our instructions.
 
@@ -166,9 +167,8 @@ We may update this Privacy Policy from time to time. The "Last updated" date at 
 For questions about this Privacy Policy or your personal data:
 
 **Vidya Sagar Dadi**
-G2, A S Paradise, Lane 3, Narasimhanagar
-Visakhapatnam 530024, Andhra Pradesh
-India
+The Estate Building, 08th Floor, Dickenson Road
+Bangalore, India – 560042
 
 Privacy: privacy@toptaskai.com
 General support: support@toptaskai.com

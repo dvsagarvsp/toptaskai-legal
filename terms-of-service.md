@@ -1,6 +1,6 @@
 # Terms of Service for TopTaskAI
 
-**Last updated:** May 28, 2026
+**Last updated:** June 7, 2026
 
 ## 1. Acceptance of Terms
 
@@ -95,7 +95,7 @@ You may not copy, modify, distribute, sell, or lease any part of the Service.
 
 ## 9. Third-Party Services
 
-The Service uses third-party providers including Anthropic, Supabase, Railway, Resend, Apple, Google, Expo/EAS, RevenueCat, and GoDaddy. A current list is maintained in our Privacy Policy. Your use of the Service may be subject to those providers' terms. We are not responsible for third-party services.
+The Service uses third-party providers including Anthropic, Supabase, Railway, Resend, Apple, Google, Expo/EAS, RevenueCat, GoDaddy, and ImprovMX. A current list is maintained in our Privacy Policy. Your use of the Service may be subject to those providers' terms. We are not responsible for third-party services.
 
 ## 10. Termination and Account Deletion
 
@@ -129,7 +129,7 @@ You agree to indemnify and hold harmless TopTaskAI, its operator Vidya Sagar Dad
 
 These Terms are governed by the laws of India, without regard to conflict-of-law principles.
 
-Any dispute arising out of or in connection with these Terms or the Service will be subject to the exclusive jurisdiction of the courts located in **Visakhapatnam, Andhra Pradesh, India.**
+Any dispute arising out of or in connection with these Terms or the Service will be subject to the exclusive jurisdiction of the courts located in **Bangalore, Karnataka, India.**
 
 Before initiating any formal proceedings, you agree to first contact us at support@toptaskai.com so we can attempt to resolve the dispute informally.
 
@@ -149,9 +149,8 @@ We may modify these Terms at any time. The "Last updated" date will reflect the 
 For questions about these Terms:
 
 **Vidya Sagar Dadi**
-G2, A S Paradise, Lane 3, Narasimhanagar
-Visakhapatnam 530024, Andhra Pradesh
-India
+The Estate Building, 08th Floor, Dickenson Road
+Bangalore, India – 560042
 
 Support: support@toptaskai.com
 Privacy: privacy@toptaskai.com
