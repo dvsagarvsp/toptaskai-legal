@@ -104,19 +104,43 @@
 
         /* ---- hero ---- */
         .hero {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 56px;
             padding: 56px 0 48px;
-            position: relative;
+        }
+
+        .hero-text {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+
+        .hero-art {
+            flex: 0 0 auto;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+                padding: 32px 0 40px;
+            }
+            .hero-text { text-align: center; }
         }
 
         .shield {
-            width: 64px;
-            height: 64px;
-            margin: 0 auto 28px;
+            width: 56px;
+            height: 56px;
+            margin: 0 0 24px;
             display: block;
             color: var(--accent);
             opacity: 0;
             animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.05s forwards;
+        }
+
+        @media (max-width: 760px) {
+            .shield { margin: 0 auto 24px; }
         }
 
         .hero h1 {
@@ -124,25 +148,87 @@
             font-weight: 700;
             line-height: 1.12;
             letter-spacing: -0.03em;
-            margin: 0 auto 18px;
-            max-width: 16ch;
+            margin: 0 0 18px;
+            max-width: 18ch;
             opacity: 0;
             animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.18s forwards;
+        }
+
+        @media (max-width: 760px) {
+            .hero h1 { margin-left: auto; margin-right: auto; }
         }
 
         .hero .sub {
             font-size: 20px;
             color: var(--muted);
             line-height: 1.5;
-            max-width: 46ch;
-            margin: 0 auto 32px;
+            max-width: 42ch;
+            margin: 0 0 32px;
             opacity: 0;
             animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.30s forwards;
+        }
+
+        @media (max-width: 760px) {
+            .hero .sub { margin-left: auto; margin-right: auto; }
         }
 
         .cta {
             opacity: 0;
             animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.42s forwards;
+        }
+
+        /* phone frame */
+        .phone {
+            width: 264px;
+            aspect-ratio: 1170 / 2400;
+            background: #0b0b0c;
+            border-radius: 38px;
+            padding: 10px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
+            position: relative;
+            opacity: 0;
+            animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.34s forwards;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .phone {
+                background: #2a2a2e;
+                box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            }
+        }
+
+        .phone .notch {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 38%;
+            height: 22px;
+            background: #0b0b0c;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 2;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .phone .notch { background: #2a2a2e; }
+        }
+
+        .phone .screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            overflow: hidden;
+            background: #f2f2f4;
+        }
+
+        .phone .screen img {
+            width: 100%;
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .phone { width: 232px; }
         }
 
         .badge {
@@ -172,7 +258,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .shield, .hero h1, .hero .sub, .cta {
+            .shield, .hero h1, .hero .sub, .cta, .phone {
                 animation: none;
                 opacity: 1;
             }
@@ -327,19 +413,29 @@
     </nav>
 
     <header class="hero">
-        <svg class="shield" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z" fill="currentColor" opacity="0.12"/>
-            <path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M8.5 12l2.4 2.4L15.8 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h1>Your AI chief of staff for getting things done</h1>
-        <p class="sub">TopTaskAI helps you make progress on the tasks you’ve already identified — calmly, without time pressure or nagging.</p>
-        <div class="cta">
-            <span class="badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c-1.7 0-3.2 1-4.5 2.6C10.7 4 9.2 3 7.5 3 4.9 3 3 5 3 8c0 3.6 3.3 6.7 9 12 5.7-5.3 9-8.4 9-12 0-3-1.9-5-4.5-5z" opacity="0"/><path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z"/></svg>
-                Coming soon to the App Store
-            </span>
-            <span class="trial">Start with a 7-day free trial · subscription required after trial</span>
+        <div class="hero-text">
+            <svg class="shield" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z" fill="currentColor" opacity="0.12"/>
+                <path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="M8.5 12l2.4 2.4L15.8 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h1>Your AI chief of staff for getting things done</h1>
+            <p class="sub">TopTaskAI helps you make progress on the tasks you’ve already identified — calmly, without time pressure or nagging.</p>
+            <div class="cta">
+                <span class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L4 5v6c0 4.5 3.2 8.4 8 9.8 4.8-1.4 8-5.3 8-9.8V5l-8-3z"/></svg>
+                    Coming soon to the App Store
+                </span>
+                <span class="trial">Start with a 7-day free trial · subscription required after trial</span>
+            </div>
+        </div>
+        <div class="hero-art">
+            <div class="phone">
+                <div class="notch"></div>
+                <div class="screen">
+                    <img src="assets/chat-screen.png" alt="TopTaskAI chat screen: the app helping a user lock in tasks for tomorrow" />
+                </div>
+            </div>
         </div>
     </header>
 
