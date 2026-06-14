@@ -258,9 +258,10 @@
 </ul>
 <h3 id="information-collected-automatically">2.2 Information Collected Automatically</h3>
 <ul>
+<!-- [LAWYER: "Usage data" below is still OVERSTATED. We do NOT use any analytics SDK or event/screen tracking (no PostHog or equivalent in v1). Crash reporting (Sentry) is diagnostic data only, not usage analytics. Trim or rework this line to match reality. -->
 <li><strong>Usage data:</strong> How you interact with the App (features used, screens viewed, session length).</li>
 <li><strong>Device data:</strong> Device type, OS version, app version, language, time zone, and unique device identifiers (used for push notifications).</li>
-<li><strong>Diagnostic data:</strong> Crash logs and performance metrics.</li>
+<li><strong>Diagnostic data:</strong> Crash and error reports (including the type and timing of crashes, device and OS information, and a user identifier used to associate a report with your account) collected through our crash-reporting provider to help us detect and fix problems.</li>
 </ul>
 <h3 id="information-we-do-not-collect">2.3 Information We Do Not Collect</h3>
 <ul>
@@ -349,11 +350,16 @@
 <td>United States</td>
 </tr>
 <tr class="odd">
+<td>Sentry (Functional Software, Inc.)</td>
+<td>Crash and error diagnostics (including a user identifier to associate reports with your account)</td>
+<td>United States</td>
+</tr>
+<tr class="even">
 <td>GoDaddy.com, LLC</td>
 <td>Domain registration for our <code>toptaskai.com</code> domain</td>
 <td>United States</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>ImprovMX</td>
 <td>Email forwarding for our <code>toptaskai.com</code> domain</td>
 <td>European Union / United States</td>
@@ -361,6 +367,7 @@
 </tbody>
 </table>
 <p>Each of these providers is bound by their own privacy policies and contractual obligations to process data only on our instructions.</p>
+<!-- [LAWYER: confirm this statement still reads correctly now that we use a crash-reporting SDK (Sentry). Sentry is diagnostics, not advertising/marketing/analytics tracking, so this is believed accurate as written — but please confirm "analytics SDKs" phrasing isn't read as conflicting with crash reporting. -->
 <p><strong>We do not currently use advertising networks, marketing analytics SDKs, attribution providers, or any third-party tracking technologies in the App.</strong></p>
 <h2 id="future-changes-to-our-service-providers">7. Future Changes to Our Service Providers</h2>
 <p>We may engage additional service providers in the future, including (but not limited to) advertising attribution providers, analytics services, or marketing partners, to support the growth of the Service. If we do so:</p>

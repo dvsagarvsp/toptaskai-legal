@@ -29,7 +29,8 @@ You may register using email and password, Sign in with Apple, or Sign in with G
 
 ### 4.1 Free Trial
 
-TopTaskAI offers a **14-day free trial** for new users. No payment is required to start the trial. You may cancel anytime during the trial without being charged.
+<!-- [LAWYER: corrected from "14-day" to "7-day" to match the actual Apple trial and in-app paywall (both products offer a 7-day free trial). Please confirm 7 days is correct and consistent across ToS, paywall, and App Store Connect. -->
+TopTaskAI offers a **7-day free trial** for new users. No payment is required to start the trial. You may cancel anytime during the trial without being charged.
 
 ### 4.2 Subscriptions
 
@@ -95,7 +96,7 @@ You may not copy, modify, distribute, sell, or lease any part of the Service.
 
 ## 9. Third-Party Services
 
-The Service uses third-party providers including Anthropic, Supabase, Railway, Resend, Apple, Google, Expo/EAS, RevenueCat, GoDaddy, and ImprovMX. A current list is maintained in our Privacy Policy. Your use of the Service may be subject to those providers' terms. We are not responsible for third-party services.
+The Service uses third-party providers including Anthropic, Supabase, Railway, Resend, Apple, Google, Expo/EAS, RevenueCat, Sentry, GoDaddy, and ImprovMX. A current list is maintained in our Privacy Policy. Your use of the Service may be subject to those providers' terms. We are not responsible for third-party services.
 
 ## 10. Termination and Account Deletion
 

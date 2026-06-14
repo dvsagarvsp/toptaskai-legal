@@ -24,9 +24,10 @@ By using the Service, you agree to the collection and use of information in acco
 
 ### 2.2 Information Collected Automatically
 
+<!-- [LAWYER: "Usage data" below is still OVERSTATED. We do NOT use any analytics SDK or event/screen tracking (no PostHog or equivalent in v1). Crash reporting (Sentry) is diagnostic data only, not usage analytics. Trim or rework this line to match reality. -->
 - **Usage data:** How you interact with the App (features used, screens viewed, session length).
 - **Device data:** Device type, OS version, app version, language, time zone, and unique device identifiers (used for push notifications).
-- **Diagnostic data:** Crash logs and performance metrics.
+- **Diagnostic data:** Crash and error reports (including the type and timing of crashes, device and OS information, and a user identifier used to associate a report with your account) collected through our crash-reporting provider to help us detect and fix problems.
 
 ### 2.3 Information We Do Not Collect
 
@@ -78,11 +79,13 @@ We share information with the following service providers strictly to operate th
 | Google LLC | Sign in with Google, Play Store distribution | Global |
 | Expo / EAS | Mobile app builds and over-the-air updates | United States |
 | RevenueCat, Inc. | Subscription management and entitlement verification | United States |
+| Sentry (Functional Software, Inc.) | Crash and error diagnostics (including a user identifier to associate reports with your account) | United States |
 | GoDaddy.com, LLC | Domain registration for our `toptaskai.com` domain | United States |
 | ImprovMX | Email forwarding for our `toptaskai.com` domain | European Union / United States |
 
 Each of these providers is bound by their own privacy policies and contractual obligations to process data only on our instructions.
 
+<!-- [LAWYER: confirm this statement still reads correctly now that we use a crash-reporting SDK (Sentry). Sentry is diagnostics, not advertising/marketing/analytics tracking, so this is believed accurate as written — but please confirm "analytics SDKs" phrasing isn't read as conflicting with crash reporting. -->
 **We do not currently use advertising networks, marketing analytics SDKs, attribution providers, or any third-party tracking technologies in the App.**
 
 ## 7. Future Changes to Our Service Providers
